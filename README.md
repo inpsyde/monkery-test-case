@@ -1,6 +1,6 @@
 # Monkery test case
 
-Composes all relevant packages for WP components unit testing (brain/monkey, mockery, phpunit) and provides a simple 
+Composes all relevant packages for WP components unit testing (brain/monkey and mockery) and provides a simple 
 test case for PHPUnit that sets up everything.
 
 Usage:
