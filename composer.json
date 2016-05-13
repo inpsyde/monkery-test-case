@@ -1,6 +1,6 @@
 {
   "name": "inpsyde/monkery-test-case",
-  "description": "Composition package of brain/monkey and mockery/mockery with a custom test case",
+  "description": "Composition package of brain/monkey and mockery/mockery with a custom test case class for PHPUnit",
   "license": "MIT",
   "authors" : [
     {
