@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 * Add CHANGELOG.md
+* **Breaking change**: Rename `MonkeryTestCase\TestCase` to `MonkeryTestCase\BrainMonkeyWpTestCase`
 
 ## [1.1.0]
 * Add `MonkeryTestCase\MockeryTestCase` for configuring Mockery separately

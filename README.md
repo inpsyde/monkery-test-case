@@ -11,9 +11,9 @@ $ composer require --dev [--prefer-dist] inpsyde/monkery-test-case
 <?php
 
 use 
-	MonkeryTestCase\TestCase;
+	MonkeryTestCase\BrainMonkeyWpTestCase;
 	
-class MyTest extends TestCase {
+class MyTest extends BrainMonkeyWpTestCase {
 
 	public function test_anything() {
 	

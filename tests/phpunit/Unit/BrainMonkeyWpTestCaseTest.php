@@ -6,11 +6,11 @@ use
 	PHPUnit_Framework_TestCase;
 
 /**
- * Class TestCaseTest
+ * Class BrainMonkeyWpTestCaseTest
  *
  * @package MonkeryTestCase
  */
-class TestCaseTest extends PHPUnit_Framework_TestCase {
+class BrainMonkeyWpTestCaseTest extends PHPUnit_Framework_TestCase {
 
 	/**
 	 * Simply tests, if the auto loader is configured correctly
@@ -18,7 +18,7 @@ class TestCaseTest extends PHPUnit_Framework_TestCase {
 	public function test_class_exists() {
 
 		$this->assertTrue(
-			class_exists( __NAMESPACE__ . '\TestCase')
+			class_exists( __NAMESPACE__ . '\BrainMonkeyWpTestCase')
 		);
 	}
 }

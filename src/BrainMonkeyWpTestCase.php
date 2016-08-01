@@ -8,13 +8,13 @@ use
 	PHPUnit_Framework_TestCase;
 
 /**
- * Class TestCase
+ * Class BrainMonkeyWpTestCase
  *
  * Sets up and closes mocking frameworks Mockery and brain/monkey
  *
  * @package MonkeryTestCase
  */
-class TestCase extends PHPUnit_Framework_TestCase {
+class BrainMonkeyWpTestCase extends PHPUnit_Framework_TestCase {
 
 	/**
 	 * Sets up the fixture, for example, open a network connection.
