@@ -1,7 +1,6 @@
 # Monkery test case
 
-Composes all relevant packages for WP components unit testing (brain/monkey and mockery) and provides a simple 
-test case for PHPUnit that sets up everything.
+Composes all relevant packages for WP components unit testing ([brain/monkey](https://brain-wp.github.io/BrainMonkey/) and mockery) and provides test cases for PHPUnit that bootstrap Mockery and BrainMonkey.
 
 Usage:
 ```
