@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+* Add `inc/bootstrap.php` to load `antecedent/patchwork` before the composer autoloader.
+
 ## [2.0.0]
 * Add CHANGELOG.md
 * **Breaking change**: Rename `MonkeryTestCase\TestCase` to `MonkeryTestCase\BrainMonkeyWpTestCase`
