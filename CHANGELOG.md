@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 * Add `inc/bootstrap.php` to load `antecedent/patchwork` before the composer autoloader.
+* Removed `composer.lock` from version control
 
 ## [2.0.0]
 * Add CHANGELOG.md
