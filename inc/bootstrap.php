@@ -11,7 +11,7 @@
 
 $vendor = is_readable( dirname( __DIR__ ) . '/vendor/autoload.php' )
 	? dirname( __DIR__ ) . '/vendor'
-	: dirname( dirname( __DIR__ ) );
+	: dirname( dirname( dirname( __DIR__ ) ) );
 
 is_readable( $vendor . '/autoload.php' ) or exit( "Composer autoload file not found\n" );
 
