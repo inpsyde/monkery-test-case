@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-* Add `inc/bootstrap.php` to load `antecedent/patchwork` before the composer autoloader.
+* Add `inc/bootstrap.php` to load `antecedent/patchwork` before the composer autoloader. Set `error_reporting( E_ALL )`.
 * Removed `composer.lock` from version control
 * Update `brain/monkey` from `~1.3` to `^1.4`
 
