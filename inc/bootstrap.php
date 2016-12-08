@@ -19,6 +19,8 @@ if ( ! defined( 'PHPUNIT_COMPOSER_INSTALL' ) ) {
 	define( 'PHPUNIT_COMPOSER_INSTALL', $vendor . '/autoload.php' );
 }
 
+error_reporting( E_ALL );
+
 require_once $vendor . '/antecedent/patchwork/Patchwork.php';
 require_once $vendor . '/autoload.php';
 
