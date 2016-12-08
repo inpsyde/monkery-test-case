@@ -33,12 +33,6 @@ class BrainMonkeyWpTestCase extends PHPUnit_Framework_TestCase {
 	protected function tearDown() {
 
 		parent::tearDown();
-		/**
-		 * @todo figure out if this works
-		 * brain/monkey also works upon mockery and therefore
-		 * calls Mockery::close() but we cannot rely on that.
-		 */
-		Mockery::close();
 		Brain\Monkey::tearDownWP();
 	}
 
