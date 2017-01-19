@@ -51,4 +51,4 @@ Good news, this plugin is free for everyone! Since it's released under the [MIT]
 
 ### Changelog
 
-See [commits](https://github.com/inpsyde/monkery-test-case/commits/master).
+See [[CHANGELOG.md]]
