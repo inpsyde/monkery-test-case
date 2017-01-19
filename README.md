@@ -51,4 +51,4 @@ Good news, this plugin is free for everyone! Since it's released under the [MIT]
 
 ### Changelog
 
-See [CHANGELOG.md](blob/master/CHANGELOG.md)
+See [CHANGELOG.md](CHANGELOG.md)
