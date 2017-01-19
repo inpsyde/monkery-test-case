@@ -7,12 +7,12 @@ Usage:
 $ composer require --dev [--prefer-dist] inpsyde/monkery-test-case 
 ```
 
-As of version 2.1.0, you should use the file `inc/bootstrap.php` as your testing bootstrapping file or at least require it within your testing bootstraping file. It loads `antecedent/patchwork` before the composer autoloader:
+As of version 2.1.0 (not released yet), you should use the file `inc/bootstrap.php` as your testing bootstrapping file or at least require it within your testing bootstraping file. It loads `antecedent/patchwork` before the composer autoloader:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
-	bootstrap="vendor/inpsyde/monkery-test-case/autoload.php"
+	bootstrap="vendor/inpsyde/monkery-test-case/inc/bootstrap.php"
 >
 	<!-- … -->
 </phpunit>
