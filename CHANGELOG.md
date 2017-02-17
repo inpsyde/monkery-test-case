@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+* **Breaking**: Drop PHPUnit 4.* support. You need at least PHPUnit 5.7 to use this package
+
 ## [2.1.0]
 
 * Add `inc/bootstrap.php` to load `antecedent/patchwork` before the composer autoloader. Set `error_reporting( E_ALL )`.

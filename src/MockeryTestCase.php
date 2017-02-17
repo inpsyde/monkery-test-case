@@ -2,16 +2,15 @@
 
 namespace MonkeryTestCase;
 
-use
-	Mockery,
-	PHPUnit_Framework_TestCase;
+use	Mockery;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class MockeryTestCase
  *
  * @package MonkeryTestCase
  */
-class MockeryTestCase extends PHPUnit_Framework_TestCase {
+class MockeryTestCase extends TestCase {
 
 	/**
 	 * Runs after each test and closes Mockery mocks

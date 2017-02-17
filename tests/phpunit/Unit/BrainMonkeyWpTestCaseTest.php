@@ -2,15 +2,14 @@
 
 namespace MonkeryTestCase;
 
-use
-	PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class BrainMonkeyWpTestCaseTest
  *
  * @package MonkeryTestCase
  */
-class BrainMonkeyWpTestCaseTest extends PHPUnit_Framework_TestCase {
+class BrainMonkeyWpTestCaseTest extends TestCase  {
 
 	/**
 	 * Simply tests, if the auto loader is configured correctly

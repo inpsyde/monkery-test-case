@@ -2,10 +2,8 @@
 
 namespace MonkeryTestCase;
 
-use
-	Brain,
-	Mockery,
-	PHPUnit_Framework_TestCase;
+use Brain\Monkey;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class BrainMonkeyWpTestCase
@@ -14,7 +12,7 @@ use
  *
  * @package MonkeryTestCase
  */
-class BrainMonkeyWpTestCase extends PHPUnit_Framework_TestCase {
+class BrainMonkeyWpTestCase extends TestCase  {
 
 	/**
 	 * Sets up the fixture, for example, open a network connection.
@@ -23,7 +21,7 @@ class BrainMonkeyWpTestCase extends PHPUnit_Framework_TestCase {
 	protected function setUp() {
 
 		parent::setUp();
-		Brain\Monkey::setUpWP();
+		Monkey::setUpWP();
 	}
 
 	/**
@@ -33,7 +31,7 @@ class BrainMonkeyWpTestCase extends PHPUnit_Framework_TestCase {
 	protected function tearDown() {
 
 		parent::tearDown();
-		Brain\Monkey::tearDownWP();
+		Monkey::tearDownWP();
 	}
 
 }
