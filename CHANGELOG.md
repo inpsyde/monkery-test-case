@@ -3,7 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+…
 
+## [3.0.0]
 * **Breaking**: Drop PHPUnit 4.* support. You need at least PHPUnit 5.7 to use this package
 
 ## [2.1.0]
@@ -22,7 +24,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0]
 * Initial release: provide a PHP unit test case that sets up [BrainMonkey](https://brain-wp.github.io/BrainMonkey/) for you.
 
-[Unreleased]:https://github.com/inpsyde/monkery-test-case/compare/2.1.0...master
+[Unreleased]:https://github.com/inpsyde/monkery-test-case/compare/3.0.0...master
+[3.0.0]:https://github.com/inpsyde/monkery-test-case/compare/2.1.0...3.0.0
 [2.1.0]:https://github.com/inpsyde/monkery-test-case/compare/2.0.0...2.1.0
 [2.0.0]:https://github.com/inpsyde/monkery-test-case/compare/1.1.0...2.0.0
 [1.1.0]:https://github.com/inpsyde/monkery-test-case/compare/1.0.0...1.1.0
