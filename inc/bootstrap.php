@@ -15,9 +15,7 @@ $vendor = is_readable( dirname( __DIR__ ) . '/vendor/autoload.php' )
 
 is_readable( $vendor . '/autoload.php' ) or exit( "Composer autoload file not found\n" );
 
-if ( ! defined( 'PHPUNIT_COMPOSER_INSTALL' ) ) {
-	define( 'PHPUNIT_COMPOSER_INSTALL', $vendor . '/autoload.php' );
-}
+defined( 'PHPUNIT_COMPOSER_INSTALL' ) or define( 'PHPUNIT_COMPOSER_INSTALL', $vendor . '/autoload.php' );
 
 error_reporting( E_ALL );
 
@@ -25,4 +23,3 @@ require_once $vendor . '/antecedent/patchwork/Patchwork.php';
 require_once $vendor . '/autoload.php';
 
 unset( $vendor );
-
