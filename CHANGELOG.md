@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-…
+* Added: configure patchwork cache directory via environment variables
 
 ## [3.0.0]
 * **Breaking**: Drop PHPUnit 4.* support. You need at least PHPUnit 5.7 to use this package
