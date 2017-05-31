@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [3.1.0]
 * Added: configure patchwork cache directory via environment variables
 
 ## [3.0.0]
@@ -24,7 +26,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0]
 * Initial release: provide a PHP unit test case that sets up [BrainMonkey](https://brain-wp.github.io/BrainMonkey/) for you.
 
-[Unreleased]:https://github.com/inpsyde/monkery-test-case/compare/3.0.0...master
+[Unreleased]:https://github.com/inpsyde/monkery-test-case/compare/3.1.0...master
+[3.1.0]:https://github.com/inpsyde/monkery-test-case/compare/3.0.0...3.1.0
 [3.0.0]:https://github.com/inpsyde/monkery-test-case/compare/2.1.0...3.0.0
 [2.1.0]:https://github.com/inpsyde/monkery-test-case/compare/2.0.0...2.1.0
 [2.0.0]:https://github.com/inpsyde/monkery-test-case/compare/1.1.0...2.0.0
