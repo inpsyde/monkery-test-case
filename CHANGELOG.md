@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+* Lock version of brain/monkey to 1.4-branch
 
 ## [3.1.0]
 * Added: configure patchwork cache directory via environment variables
