@@ -1,6 +1,6 @@
 # Monkery test case
 
-Composes all relevant packages for WP components unit testing ([brain/monkey](https://brain-wp.github.io/BrainMonkey/) and mockery) and provides test cases for PHPUnit that bootstrap Mockery and BrainMonkey. This package supports PHPUnit >=5.7
+Composes all relevant packages for WP components unit testing ([brain/monkey](https://brain-wp.github.io/BrainMonkey/) and mockery) and provides test cases for PHPUnit that bootstrap Mockery and BrainMonkey. This package supports PHPUnit >=5.7 and as of version 4 BrainMonkey 2.0.
 
 Installation:
 ```
@@ -9,7 +9,7 @@ $ composer require --dev [--prefer-dist] inpsyde/monkery-test-case
 
 ## Boostraping
 
-As of version 2.1.0, you should use the file `inc/bootstrap.php` as your testing bootstrapping file or at least require it within your testing bootstraping file. It loads `antecedent/patchwork` before the composer autoloader:
+As of version 2.1.0, you should use the file `inc/bootstrap.php` as your testing bootstrapping file or at least require it within your testing bootstraping file.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -19,29 +19,6 @@ As of version 2.1.0, you should use the file `inc/bootstrap.php` as your testing
 	<!-- … -->
 </phpunit>
 
-```
-
-## Patchwork cache
-As of version 3.1.0 it's possible to configure the cache directory used by Patchwork:
-
-Declare the environment variable `PATCHWORK_CACHE_USE_SYSTEM_TEMP_DIR=true` to use the system temporary directory (`/tmp` on Unix-like systems). 
-
-Alternatively you can declare the environment variable `PATCHWORK_CACHE_DIR=/custom/path` to use a custom path. (Be careful with relative paths! It's better to use absolute paths.)
-
-You can define these variables within your phpunit.xml configuration file:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<phpunit
-	bootstrap="vendor/inpsyde/monkery-test-case/inc/bootstrap.php"
->
-    <php>
-        <env name="PATCHWORK_CACHE_USE_SYSTEM_TEMP_DIR" value="true" />
-        <!-- or: -->
-        <env name="PATCHWORK_CACHE_DIR" value="/tmp/patchwork_cache"/>
-    </php>
-	<!-- … -->
-</phpunit>
 ```
 
 ## Writing tests

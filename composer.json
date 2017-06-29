@@ -11,8 +11,8 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "brain/monkey": "~1.4.0",
-    "mockery/mockery": "~0.9"
+    "brain/monkey": "^2.0.0",
+    "mockery/mockery": "^0.9.9"
   },
   "suggest": {
     "phpunit/phpunit": "Unit testing framework. Usually installed globally."
@@ -24,7 +24,7 @@
   },
   "config" : {
     "platform": {
-      "php": "5.4"
+      "php": "5.6"
     }
   }
 }

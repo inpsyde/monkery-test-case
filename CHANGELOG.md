@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+* Updated to BrainMonkey version 2.* that includes:
+    * **Removed** Configuration of patchwork cache
+    * Simplified bootstrap file
+
 ## [3.1.1]
 * Lock version of brain/monkey to 1.4-branch
 

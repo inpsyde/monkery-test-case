@@ -8,8 +8,7 @@
  * This file assumes a standard composer configuration (package type 'library' are installed inside vendor/)
  * and inpsyde/monkery-test-case be installed as composer package.
  */
-
-require_once call_user_func( function() {
+call_user_func( function() {
 
 	$monkery_vendor = is_readable( dirname( __DIR__ ) . '/vendor/autoload.php' )
 		? dirname( __DIR__ ) . '/vendor'
@@ -21,17 +20,5 @@ require_once call_user_func( function() {
 
 	error_reporting( E_ALL );
 
-	require_once $monkery_vendor . '/antecedent/patchwork/Patchwork.php';
-	if ( filter_var( getenv( 'PATCHWORK_CACHE_USE_SYSTEM_TEMP_DIR' ), FILTER_VALIDATE_BOOLEAN ) ) {
-		$cache_dir = sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'patchwork_' . md5( __DIR__ );
-		if ( ! is_dir( $cache_dir ) ) {
-			mkdir( $cache_dir );
-		}
-		\Patchwork\enableCaching( $cache_dir, true );
-	} elseif ( $cache_dir = getenv( 'PATCHWORK_CACHE_DIR' ) ) {
-		$cache_dir = realpath( $cache_dir );
-		\Patchwork\enableCaching( $cache_dir, true );
-	}
-
-	return $monkery_vendor . '/autoload.php';
+	require_once $monkery_vendor . '/autoload.php';
 });

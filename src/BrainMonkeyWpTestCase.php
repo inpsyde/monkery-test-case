@@ -2,8 +2,9 @@
 
 namespace MonkeryTestCase;
 
-use Brain\Monkey;
 use PHPUnit\Framework\TestCase;
+use function Brain\Monkey\setUp;
+use function Brain\Monkey\tearDown;
 
 /**
  * Class BrainMonkeyWpTestCase
@@ -21,7 +22,7 @@ class BrainMonkeyWpTestCase extends TestCase  {
 	protected function setUp() {
 
 		parent::setUp();
-		Monkey::setUpWP();
+		setUp();
 	}
 
 	/**
@@ -31,7 +32,7 @@ class BrainMonkeyWpTestCase extends TestCase  {
 	protected function tearDown() {
 
 		parent::tearDown();
-		Monkey::tearDownWP();
+		tearDown();
 	}
 
 }
