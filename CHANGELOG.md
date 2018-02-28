@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Updated to BrainMonkey version 2.* that includes:
     * **Removed** Configuration of patchwork cache
     * Simplified bootstrap file
+    * Update to patchwork 2.0.0
 
 ## [3.1.1]
 * Lock version of brain/monkey to 1.4-branch
@@ -42,7 +43,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Initial release: provide a PHP unit test case that sets up [BrainMonkey](https://brain-wp.github.io/BrainMonkey/) for you.
 
 [Unreleased]:https://github.com/inpsyde/monkery-test-case/compare/5.0.0...master
-[4.0.0]:https://github.com/inpsyde/monkery-test-case/compare/4.0.0...5.0.0
+[5.0.0]:https://github.com/inpsyde/monkery-test-case/compare/4.0.0...5.0.0
 [4.0.0]:https://github.com/inpsyde/monkery-test-case/compare/3.1.1...4.0.0
 [3.1.1]:https://github.com/inpsyde/monkery-test-case/compare/3.1.0...3.1.1
 [3.1.0]:https://github.com/inpsyde/monkery-test-case/compare/3.0.0...3.1.0
