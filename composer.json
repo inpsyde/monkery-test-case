@@ -21,10 +21,5 @@
         "psr-4": {
             "MonkeryTestCase\\": "src/"
         }
-    },
-    "config": {
-        "platform": {
-            "php": "5.6"
-        }
     }
 }
