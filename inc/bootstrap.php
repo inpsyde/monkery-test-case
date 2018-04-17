@@ -16,8 +16,6 @@ call_user_func( function() {
 
 	is_readable( $monkery_vendor . '/autoload.php' ) or exit( "Composer autoload file not found\n" );
 
-	defined( 'PHPUNIT_COMPOSER_INSTALL' ) or define( 'PHPUNIT_COMPOSER_INSTALL', $monkery_vendor . '/autoload.php' );
-
 	error_reporting( E_ALL );
 
 	require_once $monkery_vendor . '/autoload.php';
