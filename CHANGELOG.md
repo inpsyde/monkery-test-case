@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [5.0.1]
+* Remove declaration of `PHPUNIT_COMPOSER_INSTALL` from `bootstrap.php`
+
 ## [5.0.0]
 
 * Update Mockery to `^1.0`, see https://github.com/mockery/mockery/blob/master/CHANGELOG.md#100-2017-09-06
