@@ -26,7 +26,7 @@ class BrainMonkeyWpTestCaseTest extends BrainMonkeyWpTestCase {
 
 		expectAdded( 'action' )
 			->with( \Mockery::on( function( $callable ) {
-				self::assertInternalType( 'callable', $callable );
+				self::assertIsCallable( $callable );
 				return true;
 			} ) );
 
