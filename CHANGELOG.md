@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [5.1.0]
+* Lock Mockery to `< 1.4` to maintain compatibility with PHPUnit `< 8.*`
+
 ## [5.0.1]
 * Remove declaration of `PHPUNIT_COMPOSER_INSTALL` from `bootstrap.php`
 
