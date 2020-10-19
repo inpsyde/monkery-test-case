@@ -1,4 +1,4 @@
-<?php # -*- coding: utf-8 -*-
+<?php declare(strict_types=1);
 
 namespace MonkeryTestCase;
 
@@ -10,37 +10,42 @@ use function Brain\Monkey\Actions\expectDone;
  *
  * @package MonkeryTestCase
  */
-class BrainMonkeyWpTestCaseTest extends BrainMonkeyWpTestCase {
+class BrainMonkeyWpTestCaseTest extends BrainMonkeyWpTestCase
+{
 
-	/**
-	 * Simply tests, if the auto loader is configured correctly
-	 */
-	public function test_class_exists() {
+    /**
+     * Simply tests, if the auto loader is configured correctly
+     */
+    public function test_class_exists()
+    {
 
-		$this->assertTrue(
-			class_exists( __NAMESPACE__ . '\BrainMonkeyWpTestCase' )
-		);
-	}
+        $this->assertTrue(
+            class_exists(__NAMESPACE__ . '\BrainMonkeyWpTestCase')
+        );
+    }
 
-	public function test_action_added() {
+    public function test_action_added()
+    {
 
-		expectAdded( 'action' )
-			->with( \Mockery::on( function( $callable ) {
-				self::assertIsCallable( $callable );
-				return true;
-			} ) );
+        expectAdded('action')
+            ->with(\Mockery::on(function ($callable) {
+                self::assertIsCallable($callable);
+                return true;
+            }));
 
-		add_action( 'action', function() {} );
-	}
+        add_action('action', function () {
+        });
+    }
 
-	public function test_action_done() {
+    public function test_action_done()
+    {
 
-		expectDone( 'action' )
-			->with( \Mockery::on( function( $value ) {
-				self::assertSame( 'parameter', $value );
-				return true;
-			} ) );
+        expectDone('action')
+            ->with(\Mockery::on(function ($value) {
+                self::assertSame('parameter', $value);
+                return true;
+            }));
 
-		do_action( 'action', 'parameter' );
-	}
+        do_action('action', 'parameter');
+    }
 }
