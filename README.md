@@ -7,20 +7,6 @@ Installation:
 $ composer require --dev [--prefer-dist] inpsyde/monkery-test-case 
 ```
 
-## Boostraping
-
-As of version 2.1.0, you should use the file `inc/bootstrap.php` as your testing bootstrapping file or at least require it within your testing bootstraping file.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<phpunit
-	bootstrap="vendor/inpsyde/monkery-test-case/inc/bootstrap.php"
->
-	<!-- … -->
-</phpunit>
-
-```
-
 ## Writing tests
 
 ```php
@@ -36,7 +22,6 @@ class MyTest extends BrainMonkeyWpTestCase {
 	}
 }
 ```
-
 
 ## Other Notes
 

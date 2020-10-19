@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [6.0.0]
 * Remove `\MonkeryTestCase\MockeryTestCase` use `\Mockery\Adapter\Phpunit\MockeryTestCase` instead
 * Provide compatibility to PHPUnit `^8` and `^9`
+* (Internal: remove deprecated custom boostrap for PHPUnit tests)
 
 ## [5.1.0]
 * Lock Mockery to `< 1.4` to maintain compatibility with PHPUnit `< 8.*`
