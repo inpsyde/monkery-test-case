@@ -1,6 +1,6 @@
 # Monkery test case
 
-Composes all relevant packages for WP components unit testing ([brain/monkey](https://brain-wp.github.io/BrainMonkey/) and mockery) and provides test cases for PHPUnit that bootstrap Mockery and BrainMonkey. This package supports PHPUnit >=5.7 and as of version 4 BrainMonkey 2.0.
+Composes all relevant packages for WP components unit testing ([brain/monkey](https://brain-wp.github.io/BrainMonkey/) and mockery) and provides test cases for PHPUnit that bootstrap Mockery and BrainMonkey.
 
 Installation:
 ```
@@ -16,7 +16,7 @@ use MonkeryTestCase\BrainMonkeyWpTestCase;
 	
 class MyTest extends BrainMonkeyWpTestCase {
 
-	public function test_anything() {
+	public function testAnything() {
 	
 		// use \Mockery and \Brain\Monkey here
 	}
