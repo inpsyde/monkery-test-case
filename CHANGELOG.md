@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## main
+* Change license from MIT to GPL
+
 ## [6.0.0]
 * Remove `\MonkeryTestCase\MockeryTestCase` use `\Mockery\Adapter\Phpunit\MockeryTestCase` instead
 * Provide compatibility to PHPUnit `^8` and `^9`
