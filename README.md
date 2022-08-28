@@ -1,10 +1,10 @@
 # Monkery test case
 
-Composes all relevant packages for WP components unit testing ([brain/monkey](https://brain-wp.github.io/BrainMonkey/) and mockery) and provides test cases for PHPUnit that bootstrap Mockery and BrainMonkey.
+Composes all relevant packages for WP components unit testing ([brain/monkey](https://brain-wp.github.io/BrainMonkey/) and mockery) and provides test cases for PHPUnit that bootstrap Mockery and BrainMonkey. _Monkery_ is a portmanteau of Mockery and Monkey.
 
 Installation:
 ```
-$ composer require --dev [--prefer-dist] inpsyde/monkery-test-case 
+composer require --dev inpsyde/monkery-test-case
 ```
 
 ## Writing tests
@@ -13,15 +13,21 @@ $ composer require --dev [--prefer-dist] inpsyde/monkery-test-case
 <?php
 
 use MonkeryTestCase\BrainMonkeyWpTestCase;
-	
+
 class MyTest extends BrainMonkeyWpTestCase {
 
-	public function testAnything() {
-	
-		// use \Mockery and \Brain\Monkey here
-	}
+    public function testAnything() {
+
+        // use \Mockery and \Brain\Monkey here
+    }
 }
 ```
+
+## But why?
+
+Working on large projects with several packages that all declare a `...\Tests\MockeryTestCase` class which does exactly
+the same will result in a confusing list of autocomplete suggestions in your IDE. Also, with one central FQCN for the
+test case class you can use an IDE file template across packages.
 
 ## Other Notes
 
