@@ -2,7 +2,8 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## main
+## [6.0.1]
+* Restore PHP 7.2 support
 * Change license from MIT to GPL
 
 ## [6.0.0]
